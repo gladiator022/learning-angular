@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/rotating-css-card-master/css/rotating-card.css";
+/*@import "assets/rotating-css-card-master/css/pe-icon-7-stroke.css";*/
