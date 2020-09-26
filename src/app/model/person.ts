@@ -17,4 +17,5 @@ export class person{
         this.path = path;
         this.job = job
     }
+    
 }

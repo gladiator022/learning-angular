@@ -1,5 +1,7 @@
 
-<ol class="list-group">
-    <app-cv-item-component></app-cv-item-component>
-    <app-cv-item-component></app-cv-item-component>
-</ol>
+<div class="container">
+    <ol class="list-group">
+        <app-cv-item-component (selectedPerson) = 'selectPerson($event)' [person] = 'person[0]'></app-cv-item-component>
+        <app-cv-item-component (selectedPerson) = 'selectPerson($event)' [person] = 'person[1]'></app-cv-item-component>
+    </ol>
+</div>

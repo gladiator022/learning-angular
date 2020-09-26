@@ -14,4 +14,7 @@ export class ListCvcomponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectPerson(selectedPerson){
+    console.log(selectedPerson)
+  }
 }
