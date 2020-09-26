@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <app-list-cvcomponent [person] = 'person'></app-list-cvcomponent>
+            <app-list-cvcomponent (selectedPerson) = 'selectPerson($event)' [person] = 'person' ></app-list-cvcomponent>
         </div>
         <div class="col-md-6">
             <div class="containner">
-                <app-detail-cv-component></app-detail-cv-component>
+                <app-detail-cv-component [selectedPerson] = 'selectedPerson'></app-detail-cv-component>
             </div>
         </div>
     </div>

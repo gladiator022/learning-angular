@@ -1,4 +1,4 @@
-export class person{
+export class ObPerson{
     id: number;
     name: string;
     firstname: string;

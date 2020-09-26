@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
-import { person } from '../model/person';
-import { EventEmitter } from 'events';
+import { ObPerson } from '../model/person';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cv-item-component',
@@ -9,7 +9,7 @@ import { EventEmitter } from 'events';
 })
 export class CvItemComponentComponent implements OnInit {
  
-  @Input() person : person;
+  @Input() person : ObPerson;
   @Output() selectedPerson = new  EventEmitter();
   constructor() { }
 
@@ -17,7 +17,5 @@ export class CvItemComponentComponent implements OnInit {
     
   }
   selectPerson(){
-    this.selectedPerson.emit(this.person);
-  }
-
-}
+      this.selectedPerson.emit(this.person);
+  }}
