@@ -1,7 +1,7 @@
 
 <div class="n">
-    <ol class="list-group">
-        <app-cv-item-component (selectedPerson) = 'selectPerson($event)' [person] = 'person[0]'></app-cv-item-component>
-        <app-cv-item-component (selectedPerson) = 'selectPerson($event)' [person] = 'person[1]'></app-cv-item-component>
+    <ol *ngFor="let person of person; let i=index" class="list-group">
+        <app-cv-item-component (selectedPerson) = 'selectPerson($event)' 
+        [person] = 'person'></app-cv-item-component>
     </ol>
 </div>
