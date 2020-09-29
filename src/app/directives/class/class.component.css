@@ -1,0 +1,24 @@
+.class1{
+    background-color: aqua;
+    color: black;
+    font-size: medium;
+}
+.class2{
+    background-color: rgb(148, 156, 69);
+    color: rgb(204, 108, 108);
+    font-size: 50px;
+}
+.class3{
+    background-color: rgb(206, 42, 151);
+    color: rgb(243, 237, 237);
+    font-size: x-large;
+}
+.class4{
+    background-color: rgb(4, 20, 20);
+    color: rgb(217, 215, 226);
+}
+.class{
+    border: rgb(27, 185, 133) 15px solid;
+    font-size: 30px;
+    height: 80px;
+}

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ObPerson } from '../model/person';
+import { EmployServiceService } from '../services/employ-service.service';
 
 @Component({
   selector: 'app-detail-cv-component',
@@ -9,10 +10,15 @@ import { ObPerson } from '../model/person';
 export class DetailCvComponentComponent implements OnInit {
 
   @Input() selectedPerson : ObPerson;
-  constructor() { }
+  constructor(
+    private empoyservive : EmployServiceService
+  ) { }
 
   ngOnInit(): void {
   }
 
+  employ(){
+    this.empoyservive.employ(this.selectedPerson);
+  }
 }
 
