@@ -20,5 +20,8 @@ export class DetailCvComponentComponent implements OnInit {
   employ(){
     this.empoyservive.employ(this.selectedPerson);
   }
+  unemploy(){
+    this.empoyservive.unemploy(this.selectedPerson);
+  }
 }
 

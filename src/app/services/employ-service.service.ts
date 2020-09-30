@@ -18,7 +18,7 @@ export class EmployServiceService {
       this.employees.push(employee);
     }
     else{
-      alert('$(employee.name) is already employ')
+      alert(`${employee.name} is already employ`)
     }
   }
   unemploy(employee: ObPerson) : void{

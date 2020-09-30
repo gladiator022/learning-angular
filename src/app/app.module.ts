@@ -12,6 +12,10 @@ import { ClassComponent } from "./directives/class/ClassComponent";
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { EmployComponentComponent } from './employ-component/employ-component.component';
+import { ROUTING } from './app-routing';
+import { HeaderComponent } from './header/header.component';
+import { AddCvComponent } from './add-cv/add-cv.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,11 +29,15 @@ import { EmployComponentComponent } from './employ-component/employ-component.co
     ClassComponent,
     HighlightDirective,
     RainbowDirective,
-    EmployComponentComponent
+    EmployComponentComponent,
+    HeaderComponent,
+    AddCvComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

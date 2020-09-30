@@ -1,10 +1,8 @@
-<p
+<body [ngStyle]="{'backgroundColor': bgcolor }">
+    <p
 [ngClass]="{
     'class1': class1,
-    'class2': class2,
-    'class3': class3,
-    'class4': class4
-
+    'class3': class3
 }"
 >
 class works!
@@ -13,5 +11,6 @@ class works!
 
 
 <div appHighlight [ngClass]="{'class': true}">my first directive</div>
-
 <input [ngClass]="{'class': true}" appRainbow type="text" class="form-control">
+ng <a (click)='gotocv()'>goto cv tech</a>
+</body>
